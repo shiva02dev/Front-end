@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient boxes</title>
+    <style>
+        #d1{
+            background-color: green;
+            height:100px;
+            width: 100px;
+            margin: 50px;
+            box-shadow: 10px 10px 7px 5px gray;
+        }
+        #d2{
+            
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            background: linear-gradient(red 30%,white 60%,green );
+        }
+        #d3{
+            
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            background: repeating-linear-gradient( to left top, red 10px ,white 20px,green 30px)
+        }
+        #d4{
+            
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            background: radial-gradient(green 30px,gold 60%,blue 90%);
+        }
+        #d5{
+            
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            background:repeating-radial-gradient( black 30%,green 60%,blue 90%);
+        }
+        .name{
+            text-align: center;
+           font-size: 77px;
+           background:repeating-linear-gradient(to right,black,pink,green,yellow,red,blue);
+           color: transparent;
+           -webkit-background-clip: text;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="name">KADARI SHIVA KUMAR</div>
+   <div id="d1"> </div> 
+   <div id="d2"> </div>
+   <div id="d3"> </div>
+   <div id="d4"> </div>
+   <div id="d5"> </div>
+  
+</body>
+</html>

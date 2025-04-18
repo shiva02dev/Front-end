@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+  #container{
+    border: solid 2px red;
+    height: 700px;
+    width: 1400px;
+  }
+  
+  #head{
+    border:solid 2px black;
+    height: 50px;
+    width: 1400;
+    text-align: left;
+    font-size: larger;
+    color: red;
+  }
+
+ #main{
+    border: solid 2px black;
+    height: 70px;
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ } 
+  .box{
+    border: solid 2px black;
+    height: 50px;
+    width: 70px; ;
+    margin:auto 2px;
+    border-radius: 5px;
+  }
+  #side{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+  }
+  #lside{
+    border: solid 2px black;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+  }
+  #rside{
+    border: solid 2px black;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .lsb{
+    border: solid 2px black;
+    height: 70px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  .rsb{
+    border: solid 2px black;
+    height: 70px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  #footer{
+    border: solid 2px red;
+    width: 1400px;
+    height:80px ;
+    text-align: center;
+    color: red;
+    font-size: 29px;
+    margin-top: 10px;
+
+  }
+
+   </style>
+
+</head>
+<body>
+    <div id="container">
+   <header id="head"> header</header>
+    <div id="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+         </div>
+         <div id="side">
+    <div id="lside">
+        <div class="lsb"></div>
+        <div class="lsb"></div>
+        <div class="lsb"></div>
+        <div class="lsb"></div>
+        <div class="lsb"></div>
+    </div>
+    <div id="rside">
+        <div class="rsb"></div>
+        <div class="rsb"></div>
+        <div class="rsb"></div>
+        <div class="rsb"></div>
+        <div class="rsb"></div>
+    </div>
+         </div>
+   <footer id="footer"> this is the footer</footer>
+
+
+    </div>
+</body>
+</html>

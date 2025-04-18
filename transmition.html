@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transmitions</title>
+    <style>
+        #d1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin : 100px;
+            transition:all 4s ease-in;
+        }
+        #d1:hover{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        #d2{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin : 100px;
+           
+        }
+
+        #d2:hover{
+            background-color: red;
+            transform: translate(50px,50px);
+        }
+        #d3{
+            width: 100px;
+            height: 100px;
+            background-color:green;
+            margin : 100px;
+           
+        }
+        #d3:hover{
+            transform: scale(2);
+        }
+        #d4{
+            width: 100px;
+            height: 100px;
+            background-color:pink;
+            margin : 100px;
+        }
+        #d4:hover{
+            transform:rotate(45deg);
+        }
+        #d5{
+            width: 100px;
+            height: 100px;
+            background-color:rgb(206, 192, 255);
+            margin : 100px;
+        }
+        #d5:hover{
+            transform:skew(55deg);
+        }
+        /* body{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        } */
+    </style>
+</head>
+<body>
+    <h1>transmition</h1>
+    <div id="d1"></div>
+    <h1>Position change</h1>
+    <div id="d2"></div>
+    <h1>increasing the size</h1>
+    <div id="d3"></div>
+    <h1>Rotate the box</h1>
+    <div id="d4"></div>
+    <h1>skew the box</h1>
+    <div id="d5"></div>
+</body>
+</html>

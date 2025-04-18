@@ -1,0 +1,148 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <label for="user">Enter user name</label>
+        <input type="text" id="user"><br><br>
+
+        <label for="pass">Enter a password</label>
+        <input type="password" id="pass"><br><br>
+
+        <label for="cpass"> Conform Password</label>
+        <input type="password" id="cpass"><br><br>
+
+        <label for="mail">Enter your mail</label>
+        <input type="mail" id="mail"><br><br>
+
+        <label for="mobile">Enter your number</label>
+        <input type="text" id="mobile"><br><br>
+         
+        <button onclick="show()"> submit</button>
+
+    </div>
+<p id="output"></p>
+    <script>
+    function show(){
+        const User={
+          username: document.getElementById("user").value,
+          password: document.getElementById("pass").value,
+          conpassword :document.getElementById("cpass").value,
+          mail : document.getElementById("mail").value,
+          mobile :document.getElementById("mobile").value,
+
+    };
+    document.getElementById("output").innerHTML=JSON.stringify(User);
+    }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- <p id="output"></p>
+<script>
+    const student={
+        name:"shiva kumar",
+        rollnbr:577,
+        course:"java",
+    }
+//document.getElementById("output").innerHTML=JSON.stringify(student);
+output.innerHTML=`${student.name} <br> ${student.rollnbr} <br> ${student.course}`
+</script> -->
+
+
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div{
+          background-color: blueviolet;
+          width: 500px;
+          margin: auto;
+          margin-top: 100px;
+          border: solid black 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div" align="center">
+        <h1>Registration form</h1>
+        <input type="text" id="fn" placeholder="Enter first name"><br><br>
+
+        <input type="text" id="ln" placeholder="Enter last name"><br><br>
+        
+        <input type="text" id="ad" placeholder="Enter Addres"><br><br>
+        <select name="course" id="c1">
+            <option >Java</option>
+            <option >DotNet</option>
+            <option >Python</option>
+            <option >Data Science</option>
+        </select><br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="m"><label for="">Male</label>
+        <input type="radio" name="gender" value="f"><label for="">Female</label>
+        <br><br>
+
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" name="hobbies" value="Playing">Playing
+        <input type="checkbox" name="hobbies" value="Reading">Reading
+        <input type="checkbox" name="hobbies" value="Riding">Riding
+        
+       <br><br>
+
+        <input type="text" id="nbr" placeholder="Enter mobile number"><br><br>
+
+        <input type="mail" id="mail" placeholder="Enter your Mail"><br><br>
+        <button onclick="show()">Enter</button><br><br>
+        
+    </div>
+    <p id="output"></p>
+
+     <script>
+       function show(){
+        const a={
+            fname:document.getElementById("fn").value,
+            lname:document.getElementById("ln").value,
+            address:document.getElementById("ad").value,
+            course:document.getElementById("c1").value,
+            gender:document.querySelector('input[name="gender"]:checked').value,
+            hobbies: Array.from(document.querySelectorAll('input[name="hobbies"]:checked')).map((hobbi)=>hobbi.value),
+            Phnumber:document.getElementById("nbr").value,
+            mail:document.getElementById("mail").value,
+        }
+        console.log(a);
+        
+        document.getElementById("output").innerHTML=`First name : ${a.fname} <br>
+                                                     Last name : ${a.lname} <br>
+                                                     Address : ${a.address} <br>
+                                                     Course : ${a.course} <br>
+                                                     gender: ${a.gender} <br>
+                                                     Hobbies : ${a.hobbies} <br>
+                                                     Phone no : ${a.phnumber} <br>
+                                                     Mail id : ${a.mail} <br>
+        
+        `
+       };
+
+
+     </script>
+
+    
+</body>
+</html>

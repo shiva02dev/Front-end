@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position pratice</title>
+    <style>
+        .c1{
+            background-color: black;
+        }
+        #d1{
+            background-color: rgb(255, 85, 0);
+            height: 300px;
+            width: 100px;
+            position:relative;
+            top: 300px;
+            left: 500px;
+        }
+        #d2{
+            background-color:rgba(0,10,200,1);
+            height: 300px;
+            width: 100px;
+            position: fixed;
+            top:200px ;
+            bottom: 200px;
+        }
+        #d3{
+            background-color: green;
+            height: 300px;
+            width: 100px;
+            position:absolute;
+            top: 500px;
+            left: 200px;
+        }
+        #d4{
+            background-color: pink;
+            height: 500px;
+
+        }
+        #d5{
+            background-color: orangered;
+            height: 500px;
+        }
+        #d6{
+            background-color:purple;
+            position: sticky;
+            top:300px;
+        }
+    </style>
+</head>
+<body>
+  <div class="c1">
+    <div id="d1">div 1</div>
+    <div id="d2">div 2</div>
+    <div id="d3"> div 3</div>
+    <div id="d4"> div 4</div>
+    <div id="d6">div 6</div>
+    <div id="d5"> div 5</div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <input type="number"  id="CP" placeholder="Enter the costprice" ><br><br>
+    <input type="number" id="SP" placeholder="Enter the selling price"><br><br>
+    <button onclick="calculateProfitorLoss()">Calculate</button><br><br>
+    <label for="output"></label>
+    <textarea id="output" rows="4" cols="50" readonly></textarea>
+   </div> 
+
+   <script>
+    
+   function calculateProfitorLoss()
+   {
+    let cp=+CP.value;
+    let sp=+SP.value;
+    let pu,lu;
+   const output= document.getElementById("output");
+   if(sp>cp)
+    {   pu=sp-cp;
+      // output.value=` profit for unit ${pu} `
+       output.value=`profit for unit ${pu}  Total Profit on 100 UNits ${pu*100} `;
+  }
+    else{
+        lu=cp-sp;
+       // output.value=`  `
+       output.value= `loss for unit ${lu}  Total loss on 100 UNits ${lu*100} `;
+    }
+    
+   }
+   </script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .div{
+    width: 300px;
+    height: 250px;
+    border: solid black 3px;
+    text-align: center;
+    padding-top: 50px;
+    background-color:rgb(203, 196, 196);
+    margin: auto;
+    margin-top: 200px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="div">
+  <input type="text" id="t1" placeholder="Enter user name" name="t"><br><br>
+  <input type="password" id="p1" placeholder="Enter password" name="p"><br><br>
+  <button onclick="loginValidate()">loginValidate</button>
+  <p id="message" style="font-size: 25px;"></p>
+  </div>
+
+  <script>
+    function loginValidate()
+    {   
+       let un=t1.value;
+      let pw=p1.value;
+      let result;
+      let message=document.getElementById("message");;
+       if(un==="shiva" && pw==="shiva023")
+       {
+        
+        result=`welcome${un}! you logged in successfully.`;
+        message.style.color="green";
+        message.innerText=result;
+         //document.writeln(`welcome ${un}! you logged in successfully.`);
+       }
+       else if (un!=="shiva")
+       {
+        result=`sorry! incorrect username`;
+        message.style.color="red";
+        message.innerText=result;
+        //document.writeln(`sorry! incorrect username`);
+       }
+       
+       else {
+        result=`sorry! incorrect password`;
+        message.style.color="red";
+        message.innerText=result;
+        //document.writeln(`sorry! incorrect password`);
+       }  
+    
+    }
+
+  </script>
+
+</body>
+</html>
