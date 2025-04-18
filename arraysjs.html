@@ -1,0 +1,91 @@
+<script>
+   let a=[10,20,30,40,50,60,70];
+   a[5]=55;
+   a[3]=77;
+   let b=new Array('shiva','aravind','chintu','sidhu','ammulu');
+   document.write(`${a} <br>`);
+   document.write(`${b}<br>`);
+
+
+   for(let i in a) 
+   {
+    document.write(`${i} &nbsp; ${a[i]}<br>`);
+   }
+
+
+   for( let x of b)
+   {
+    document.write(`${x} <br>`);
+   }
+
+  // merging
+   let y=[...a,...b];
+   document.write(`${y}<br>`);
+
+ //swaping
+   let s1=100, s2=200;
+   document.write(`s1=${s1},s2=${s2} <br>`);
+   [s1,s2]=[s2,s1];
+   document.write(`s1=${s1},s2=${s2}<br>`);
+
+// include serching
+document.write(`${a.includes(55)}<br>`);
+document.write(`${a.includes(77)}<br>`);
+document.write(`${a.includes(66)}<br>`);
+document.write(`${b.includes('shiva')}<br>`);
+document.write(`${b.includes('jali')}<br>`);
+document.write(`${b.includes("vind")}<br>`);
+document.write(`${b.includes("shi")}<br>`);
+
+// index serching
+document.write(`${a.indexOf(55)}<br>`);
+document.write(`${a.indexOf(77)}<br>`);
+document.write(`${a.indexOf(66)}<br>`);
+document.write(`${b.indexOf('chintu')}<br>`);
+document.write(`${b.indexOf("sidhu")}<br>`);
+document.write(`${a.lastIndexOf(20)}<br>`);
+document.write(`${a.lastIndexOf(77)}<br>`);
+
+
+
+a.reverse();
+b.reverse();
+document.write(`${a}<br>`);
+document.write(`${b}<br>`);
+
+
+a.sort();
+b.sort();
+document.write(`${a}<br>`);
+document.write(`${b}<br>`);
+
+//join();
+document.write(`${a.join("&#5577;")}<br>`);
+
+//to string();
+document.write(`${b.toString()}<br>`);
+document.write(`${a.toString()}<br>`);
+
+
+//splice method
+//array delection
+a.splice(2,1);
+document.write(`${a}<br>`);
+
+
+//array updation
+a.splice(2,1,101,102);
+document.write(`${a}<br>`);
+
+//array insertion
+a.splice(3,0,333,444,555)
+document.write(`${a}<br>`);
+
+
+//spliting
+let a1=a.slice(0,4);
+let a2=a.slice(4);
+document.write(`${a1}<br>`);
+document.write(`${a2}<br>`);
+
+   </script>
